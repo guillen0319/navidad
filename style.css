@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #0a0014, #000);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.contenedor {
+    text-align: center;
+    padding: 25px;
+}
+
+h1 {
+    color: #ff4d6d;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 14px 28px;
+    background: #ff4d6d;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#foto {
+    display: none;
+    max-width: 90vw;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255,77,109,0.6);
+}
+
+#mensaje {
+    display: none;
+    margin-top: 15px;
+    font-size: 18px;
+}
