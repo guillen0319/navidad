@@ -4,18 +4,16 @@ const mensaje = document.getElementById("mensaje");
 const audio = document.getElementById("audio");
 
 boton.addEventListener("click", () => {
-    // Mostrar imagen y mensaje
-    foto.style.display = "block";
-    mensaje.style.display = "block";
-    boton.style.display = "none";
+  foto.style.display = "block";
+  mensaje.style.opacity = "1";
 
-    // Reproducir canción
+  audio.currentTime = 0;
+  audio.play();
+
+  setTimeout(() => {
+    audio.pause();
     audio.currentTime = 0;
-    audio.play();
+  }, 45000);
 
-    // Detener en 45 segundos
-    setTimeout(() => {
-        audio.pause();
-        audio.currentTime = 0;
-    }, 45000);
+  boton.style.display = "none";
 });
